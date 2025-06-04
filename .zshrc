@@ -76,6 +76,7 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
     ssh-agent
     git
+    sudo
 )
 
 source $ZSH/oh-my-zsh.sh
