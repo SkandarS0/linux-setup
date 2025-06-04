@@ -78,6 +78,7 @@ plugins=(
     git
     sudo
     web-search
+    fast-syntax-highlighting
 )
 
 # Websearch plugin configuration
