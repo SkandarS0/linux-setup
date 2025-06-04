@@ -77,6 +77,12 @@ plugins=(
     ssh-agent
     git
     sudo
+    web-search
+)
+
+# Websearch plugin configuration
+ZSH_WEB_SEARCH_ENGINES=(
+    grok "https://www.grok.com/?q="
 )
 
 source $ZSH/oh-my-zsh.sh
