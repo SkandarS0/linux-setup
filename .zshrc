@@ -80,6 +80,7 @@ plugins=(
     web-search
     fast-syntax-highlighting
     zsh-autosuggestions
+    command-not-found
 )
 
 # Websearch plugin configuration
