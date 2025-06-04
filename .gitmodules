@@ -13,3 +13,6 @@
 [submodule "omz-custom/plugins/zsh-autosuggestions"]
 	path = omz-custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "omz-custom/plugins/zsh-completions"]
+	path = omz-custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
