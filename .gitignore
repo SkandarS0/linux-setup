@@ -2,3 +2,4 @@
 .dotnet
 .cache
 .zcompdump*
+cron.log
