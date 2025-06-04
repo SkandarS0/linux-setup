@@ -79,6 +79,7 @@ plugins=(
     sudo
     web-search
     fast-syntax-highlighting
+    zsh-autosuggestions
 )
 
 # Websearch plugin configuration

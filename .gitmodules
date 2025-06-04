@@ -10,3 +10,6 @@
 [submodule "omz-custom/plugins/fast-syntax-highlighting"]
 	path = omz-custom/plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+[submodule "omz-custom/plugins/zsh-autosuggestions"]
+	path = omz-custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
