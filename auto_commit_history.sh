@@ -73,8 +73,20 @@ if git status --porcelain | grep -q .history; then
         ssh-agent -k > /dev/null
         exit 1
     }
-    git push auto-origin master || {
+    # change remote URL of origin to git@github-automation:SkandarS0/linux-setup.git then push, then change it back to
+    # git@github.com:SkandarS0/linux-setup.git
+    git remote set-url origin git@github-automation:SkandarS0/linux-setup.git || {
+        echo "[$(date)] Failed to change remote URL to automation" >> "$LOG_FILE"
+        ssh-agent -k > /dev/null
+        exit 1
+    }
+    git push origin master || {
         echo "[$(date)] Git push failed for parent repository" >> "$LOG_FILE"
+        ssh-agent -k > /dev/null
+        exit 1
+    }
+    git remote set-url origin git@github.com:SkandarS0/linux-setup.git || {
+        echo "[$(date)] Failed to change remote URL back to original" >> "$LOG_FILE"
         ssh-agent -k > /dev/null
         exit 1
     }
