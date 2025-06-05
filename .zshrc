@@ -83,6 +83,9 @@ plugins=(
     command-not-found
 )
 
+# SSH Agent plugin configuration
+zstyle :omz:plugins:ssh-agent identities id_ed25519_automation id_ed25519_manual
+
 # Websearch plugin configuration
 ZSH_WEB_SEARCH_ENGINES=(
     grok "https://www.grok.com/?q="
