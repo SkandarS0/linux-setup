@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# https://github.com/zsh-users/zsh-autosuggestions/issues/238#issuecomment-389324291Add commentMore actions
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238#issuecomment-389324291
 # This speeds up pasting w/ autosuggest
 # Disable zsh-autocompletion on paste
 pasteinit() {
