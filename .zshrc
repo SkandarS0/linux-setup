@@ -77,6 +77,11 @@ export UV_INSTALL_DIR="$HOME/.dev-tools/uv"
 export UV_PYTHON_INSTALL_DIR="$HOME/.dev-tools/uv/python"
 export PATH="$UV_INSTALL_DIR:$PATH"
 
+# Rust
+export RUSTUP_HOME="$HOME/.dev-tools/rustup"
+export CARGO_HOME="$HOME/.dev-tools/cargo"
+source "$HOME/.dev-tools/cargo/env"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -93,6 +98,7 @@ plugins=(
     laravel
     composer
     uv
+    rust
 )
 
 # SSH Agent plugin configuration
