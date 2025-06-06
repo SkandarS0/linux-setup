@@ -68,6 +68,10 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/omz-custom
 
+# PHP
+export PATH="$HOME/.dev-tools/php:$PATH"
+export PHP_INI_SCAN_DIR="$HOME/.dev-tools/php:$PHP_INI_SCAN_DIR"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -81,6 +85,8 @@ plugins=(
     fast-syntax-highlighting
     zsh-autosuggestions
     command-not-found
+    laravel
+    composer
 )
 
 # SSH Agent plugin configuration

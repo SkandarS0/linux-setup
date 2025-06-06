@@ -1,0 +1,1 @@
+alias php-setup='export PATH="$HOME/.dev-tools/php:$PATH" && export PHP_INI_SCAN_DIR="$HOME/.dev-tools/php:$PHP_INI_SCAN_DIR" && bash -c "$(curl -fsSL https://php.new/install/linux/8.4 | sed s/uninstall_herd_lite/uninstall/g | sed s#\$HOME/.config/herd-lite/bin#\$HOME/.dev-tools/php#g)"'
