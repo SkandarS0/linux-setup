@@ -72,6 +72,11 @@ ZSH_CUSTOM=$HOME/omz-custom
 export PATH="$HOME/.dev-tools/php:$PATH"
 export PHP_INI_SCAN_DIR="$HOME/.dev-tools/php:$PHP_INI_SCAN_DIR"
 
+# UV
+export UV_INSTALL_DIR="$HOME/.dev-tools/uv"
+export UV_PYTHON_INSTALL_DIR="$HOME/.dev-tools/uv/python"
+export PATH="$UV_INSTALL_DIR:$PATH"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -87,6 +92,7 @@ plugins=(
     command-not-found
     laravel
     composer
+    uv
 )
 
 # SSH Agent plugin configuration
