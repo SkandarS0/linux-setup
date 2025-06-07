@@ -16,3 +16,6 @@
 [submodule "omz-custom/plugins/zsh-completions"]
 	path = omz-custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "projects/educational/mpswm-pfe/web-app"]
+	path = projects/educational/mpswm-pfe/web-app
+	url = git@github.com:SkandarS0/mpswm-pfe-web.git
