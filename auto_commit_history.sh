@@ -56,8 +56,6 @@ if git status --porcelain | grep -q .; then
     echo "[$(date)] Submodule changes committed and pushed to origin" >> "$LOG_FILE"
 else
     echo "[$(date)] No changes in .history submodule" >> "$LOG_FILE"
-    ssh-agent -k > /dev/null
-    exit 0
 fi
 
 # Navigate to parent repository
