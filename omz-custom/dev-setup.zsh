@@ -10,3 +10,12 @@ uv_setup() {
 rust_setup() {
     curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | env CARGO_HOME="$HOME/.dev-tools/cargo" RUSTUP_HOME="$HOME/.dev-tools/rustup" bash -s -- -y --no-modify-path
 }
+
+pnpm_setup() {
+    # download latest release from GitHub
+    local url="https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linux-x64"
+    local dest="$HOME/.dev-tools/pnpm/pnpm"
+    mkdir -p "$(dirname "$dest")"
+    wget -q -O "$dest" "$url"
+    chmod +x "$dest"
+}

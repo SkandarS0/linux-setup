@@ -82,6 +82,11 @@ export RUSTUP_HOME="$HOME/.dev-tools/rustup"
 export CARGO_HOME="$HOME/.dev-tools/cargo"
 source "$HOME/.dev-tools/cargo/env"
 
+# pnpm
+export PNPM_HOME="$HOME/.dev-tools/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+alias pnpx="pnpm dlx"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
