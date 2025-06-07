@@ -8,3 +8,8 @@ cron.log
 !.dev-tools/php/cacert.pem
 .local/share/*
 .local/state/*
+.config/composer
+.config/vscode-sqltools
+.azure
+.aws
+.docker
