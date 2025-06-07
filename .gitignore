@@ -6,4 +6,5 @@ cron.log
 .dev-tools/*/*
 !.dev-tools/php/php.ini
 !.dev-tools/php/cacert.pem
-.local/share/composer
+.local/share/*
+.local/state/*
