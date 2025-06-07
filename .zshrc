@@ -104,6 +104,7 @@ plugins=(
     composer
     uv
     rust
+    gitignore
 )
 
 # SSH Agent plugin configuration
