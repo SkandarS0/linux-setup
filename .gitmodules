@@ -19,3 +19,6 @@
 [submodule "projects/educational/mpswm-pfe/web-app"]
 	path = projects/educational/mpswm-pfe/web-app
 	url = git@github.com:SkandarS0/mpswm-pfe-web.git
+[submodule "projects/educational/mpswm-pfe/seed_excel"]
+	path = projects/educational/mpswm-pfe/seed_excel
+	url = git@github.com:SkandarS0/mpswm-pfe-seed-excel.git
