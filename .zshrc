@@ -87,6 +87,10 @@ export PNPM_HOME="$HOME/.dev-tools/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 alias pnpx="pnpm dlx"
 
+# SDKMAN
+export SDKMAN_DIR="$HOME/.dev-tools/sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/

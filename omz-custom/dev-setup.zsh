@@ -19,3 +19,7 @@ pnpm_setup() {
     wget -q -O "$dest" "$url"
     chmod +x "$dest"
 }
+
+sdkman_setup() {
+    curl -s "https://get.sdkman.io" | env SDKMAN_DIR="$HOME/.dev-tools/sdkman" bash
+}
