@@ -68,6 +68,25 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/omz-custom
 
+# PHP
+export PATH="$HOME/.dev-tools/php:$PATH"
+export PHP_INI_SCAN_DIR="$HOME/.dev-tools/php:$PHP_INI_SCAN_DIR"
+
+# UV
+export UV_INSTALL_DIR="$HOME/.dev-tools/uv"
+export UV_PYTHON_INSTALL_DIR="$HOME/.dev-tools/uv/python"
+export PATH="$UV_INSTALL_DIR:$PATH"
+
+# Rust
+export RUSTUP_HOME="$HOME/.dev-tools/rustup"
+export CARGO_HOME="$HOME/.dev-tools/cargo"
+source "$HOME/.dev-tools/cargo/env"
+
+# pnpm
+export PNPM_HOME="$HOME/.dev-tools/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+alias pnpx="pnpm dlx"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -81,6 +100,11 @@ plugins=(
     fast-syntax-highlighting
     zsh-autosuggestions
     command-not-found
+    laravel
+    composer
+    uv
+    rust
+    gitignore
 )
 
 # SSH Agent plugin configuration
