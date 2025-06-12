@@ -3,5 +3,3 @@
 [user]
 	name = Skandar Souissi
 	email = iskandarsouissi.0@gmail.com
-[core]
-	hooksPath = .git_hooks
