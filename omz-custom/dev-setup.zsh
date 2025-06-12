@@ -8,7 +8,7 @@ uv_setup() {
 }
 
 rust_setup() {
-    curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | env CARGO_HOME="$HOME/.dev-tools/cargo" RUSTUP_HOME="$HOME/.dev-tools/rustup" bash -s -- -y --no-modify-path
+    curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | env CARGO_HOME="$HOME/.dev-tools/cargo" RUSTUP_HOME="$HOME/.dev-tools/rustup" bash -s -- -y --no-modify-path --default-toolchain '1.87.0'
 }
 
 pnpm_setup() {
