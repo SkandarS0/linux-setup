@@ -13,3 +13,5 @@ cron.log
 .azure
 .aws
 .docker
+.npm
+.lesshst
