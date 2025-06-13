@@ -22,3 +22,9 @@
 [submodule "projects/educational/mpswm-pfe/seed_excel"]
 	path = projects/educational/mpswm-pfe/seed_excel
 	url = git@github.com:SkandarS0/mpswm-pfe-seed-excel.git
+[submodule "projects/personal/others/rust/git-hooks"]
+	path = projects/personal/others/rust/git-hooks
+	url = git@github.com:SkandarS0/rust-git-hooks.git
+[submodule "projects/personal/others/rust/x-backup"]
+	path = projects/personal/others/rust/x-backup
+	url = git@github.com:SkandarS0/x-backup.git
