@@ -91,13 +91,16 @@ git-get-hooks() {
     
     # Make hooks executable
     chmod +x "$hooks_dir"/* 2>/dev/null
-    
+
     # Clean up
     rm -rf "$temp_dir"
     
     _log "$language git hooks installed successfully"
     echo "Installed hooks:"
     ls -la "$hooks_dir" 2>/dev/null || echo "No hooks found in hooks directory"
+
+    # Create a marker file named after the language key
+    touch "$hooks_dir/.${language}"
 }
 
 alias gg-hooks=git-get-hooks
