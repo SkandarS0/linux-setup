@@ -108,6 +108,7 @@ plugins=(
     composer
     uv
     rust
+    sdk
     gitignore
 )
 
