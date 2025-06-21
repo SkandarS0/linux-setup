@@ -91,6 +91,9 @@ alias pnpx="pnpm dlx"
 export SDKMAN_DIR="$HOME/.dev-tools/sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
+# Gradle
+export GRADLE_USER_HOME="$HOME/.dev-tools/gradle"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
