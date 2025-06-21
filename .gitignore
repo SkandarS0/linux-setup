@@ -15,3 +15,4 @@ cron.log
 .docker
 .npm
 .lesshst
+.python_history
