@@ -4,7 +4,7 @@ php-setup() {
 
 uv-setup() {
     curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="$UV_INSTALL_DIR" INSTALLER_NO_MODIFY_PATH=1 bash
-    env UV_PYTHON_INSTALL_DIR="$UV_INSTALL_DIR/python" "$UV_INSTALL_DIR/uv" python install
+    env UV_PYTHON_INSTALL_DIR="$UV_INSTALL_DIR/python" "$UV_INSTALL_DIR/uv" python install && "$UV_INSTALL_DIR/uv" tool install ruff
 }
 
 rust-setup() {
