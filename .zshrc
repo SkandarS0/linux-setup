@@ -75,7 +75,7 @@ export PHP_INI_SCAN_DIR="$HOME/.dev-tools/php:$PHP_INI_SCAN_DIR"
 # UV
 export UV_INSTALL_DIR="$HOME/.dev-tools/uv"
 export UV_PYTHON_INSTALL_DIR="$HOME/.dev-tools/uv/python"
-export PATH="$UV_INSTALL_DIR:$PATH"
+export PATH="$UV_INSTALL_DIR:$HOME/.local/bin:$PATH"
 
 # Rust
 export RUSTUP_HOME="$HOME/.dev-tools/rustup"
