@@ -10,6 +10,7 @@ cron.log
 .local/state/*
 .config/composer
 .config/vscode-sqltools
+.config/uv
 .azure
 .aws
 .docker
