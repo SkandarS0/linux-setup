@@ -87,6 +87,12 @@ export PNPM_HOME="$HOME/.dev-tools/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 alias pnpx="pnpm dlx"
 
+# bun
+export BUN_INSTALL="$HOME/.dev-tools/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# completions
+[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+
 # SDKMAN
 export SDKMAN_DIR="$HOME/.dev-tools/sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
@@ -170,3 +176,6 @@ zstyle :bracketed-paste-magic paste-finish paste-finish
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# bun completions
+[ -s "/home/skandars0/.dev-tools/bun/_bun" ] && source "/home/skandars0/.dev-tools/bun/_bun"

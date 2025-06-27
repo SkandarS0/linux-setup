@@ -20,6 +20,10 @@ pnpm-setup() {
     chmod +x "$dest"
 }
 
+bun-setup() {
+    curl -fsSL https://bun.sh/install | env BUN_INSTALL="$HOME/.dev-tools/bun" bash
+}
+
 sdkman-setup() {
     curl -s "https://get.sdkman.io" | env SDKMAN_DIR="$HOME/.dev-tools/sdkman" bash
 }
