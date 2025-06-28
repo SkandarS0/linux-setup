@@ -9,9 +9,8 @@ cron.log
 .local/share/*
 .local/state/*
 .local/bin
-.config/composer
-.config/vscode-sqltools
-.config/uv
+.config/*
+!.config/pnpm
 .azure
 .aws
 .docker
@@ -19,3 +18,4 @@ cron.log
 .lesshst
 .python_history
 .redhat
+.lemminx
