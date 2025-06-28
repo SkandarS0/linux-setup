@@ -176,6 +176,3 @@ zstyle :bracketed-paste-magic paste-finish paste-finish
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# bun completions
-[ -s "/home/skandars0/.dev-tools/bun/_bun" ] && source "/home/skandars0/.dev-tools/bun/_bun"
